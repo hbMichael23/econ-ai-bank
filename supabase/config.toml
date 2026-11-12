@@ -1,0 +1,6 @@
+project_id = "econ-ai-bank"
+
+[functions.ai]
+# 前端使用 Supabase anon key + x-user-token 调用；
+# 函数内部会再次验证 token，因此关闭 JWT 强制校验。
+verify_jwt = false

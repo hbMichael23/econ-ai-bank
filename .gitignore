@@ -1,0 +1,27 @@
+node_modules
+dist
+dist-ssr
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.local
+.vscode/*
+!.vscode/extensions.json
+
+# Tauri / Capacitor 如后续添加
+src-tauri/target
+src-tauri/gen
+android/.gradle
+android/.idea
+android/local.properties
+android/build
+android/app/build
+*.jks
+*.keystore
+
+# Supabase 本地
+supabase/.branches
+supabase/.temp
+supabase/.env
+supabase/.env.functions

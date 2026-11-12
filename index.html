@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#152e27" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="经济学考研私有 AI 题库：拍照 OCR、AI 分类标签、批注草稿、向量相似题与变式训练。" />
+    <title>经济学考研私有 AI 题库</title>
+    <script>
+      try {
+        const saved = localStorage.getItem('econ_ai_theme');
+        const dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+      } catch (_) {}
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23152e27'/%3E%3Cpath d='M18 20h28M18 32h20M18 44h14' stroke='%23dab76e' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='46' cy='44' r='4' fill='%23dab76e'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="boot">
+      <div class="boot-card">
+        <div class="boot-mark">经</div>
+        <div class="boot-spinner"></div>
+        <h1>正在打开私有题库</h1>
+        <p>校验设备标识与云端题库，请稍候…</p>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
